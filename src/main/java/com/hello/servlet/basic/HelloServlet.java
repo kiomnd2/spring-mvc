@@ -11,7 +11,7 @@ import java.io.IOException;
 public class HelloServlet extends HttpServlet {
 
     @Override
-    public void service(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
+    protected void service(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
         System.out.println("hello servlet");
 
         String username = req.getParameter("username");
